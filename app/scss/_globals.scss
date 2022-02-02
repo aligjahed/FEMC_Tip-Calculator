@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"); // [Space Mono] 400 700
+
+html {
+  box-sizing: border-box;
+
+  font-family: "Space Mono";
+  font-size: 100%;
+
+  overflow: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  margin: 0;
+  font-family: "Space Mono";
+}
+
+.flex {
+  display: flex;
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-column {
+    flex-direction: column;
+  }
+}
+
+.container {
+  height: 100%;
+  background-color: $veryLightGrayishCyan;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    height: 100vh;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

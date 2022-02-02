@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="container flex flex-jc-c flex-ai-c flex-column">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+
+      <div class="card flex flex-jc-c flex-ai flex-column">
+        <div class="card__input">
+          <h3 class="title__bill">Bill</h3>
+          <div class="input-form">
+            <img
+              src="./images/icon-dollar.svg"
+              alt="dollar-icon"
+              class="icon"
+            />
+            <input type="number" id="bill" placeholder="0" />
+          </div>
+          <h3 class="title__selectTip">Select Tip %</h3>
+          <div class="card__buttons">
+            <button id="5" onclick="setTipPercent(this)" class="btn">5%</button>
+            <button id="10" onclick="setTipPercent(this)" class="btn">
+              10%
+            </button>
+            <button id="15" onclick="setTipPercent(this)" class="btn">
+              15%
+            </button>
+            <button id="25" onclick="setTipPercent(this)" class="btn">
+              25%
+            </button>
+            <button id="50" onclick="setTipPercent(this)" class="btn">
+              50%
+            </button>
+            <input
+              type="number"
+              onchange="setTipPercent(this)"
+              id="customeTip"
+              placeholder="Custom"
+            />
+          </div>
+          <h3 class="title__numberP">Number of People</h3>
+          <div class="input-form">
+            <img
+              src="./images/icon-person.svg"
+              alt="people-sign"
+              class="icon"
+            />
+            <input type="number" id="people" placeholder="0" />
+          </div>
+        </div>
+        <div class="card__result">
+          <div class="data flex flex-jc-sb flex-column">
+            <div>
+              <div class="tipAmount flex flex-jc-sb flex-ai-c">
+                <div class="result__title">
+                  <h2>Tip Amount</h2>
+                  <p>/ person</p>
+                </div>
+                <div class="result__price">
+                  <h1 id="tip">$0.00</h1>
+                </div>
+              </div>
+              <div class="totalAmount flex flex-jc-sb flex-ai-c">
+                <div class="result__title">
+                  <h2>Total</h2>
+                  <p>/ person</p>
+                </div>
+                <div class="result__price">
+                  <h1 id="total">$0.00</h1>
+                </div>
+              </div>
+            </div>
+            <button onclick="action()" class="action_btn reset">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./app/js/main.js"></script>
+</html>

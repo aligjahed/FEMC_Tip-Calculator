@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Space Mono";
+  font-size: 100%;
+  overflow: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  margin: 0;
+  font-family: "Space Mono";
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  height: 100%;
+  background-color: #c5e4e7;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    height: 100vh;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.logo {
+  padding: 50px 145px 35px 145px;
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  min-width: 375px;
+  max-width: 920px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: white;
+}
+
+.card__input {
+  padding: 35px 32px;
+}
+
+.card__input h3 {
+  color: #5e7a7d;
+}
+
+.card__buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 15px 15px;
+}
+
+.card__buttons .btn {
+  border: none;
+  background-color: #00494d;
+  border-radius: 5px;
+  color: white;
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.card__buttons input {
+  min-width: 120px;
+  min-height: 50px;
+  border: none;
+  text-align: center;
+  color: #00494d;
+  background-color: #f5fafa;
+  outline-color: #26c0ab;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.card__buttons input::-webkit-input-placeholder {
+  color: #5e7a7d;
+}
+
+.card__buttons input:-ms-input-placeholder {
+  color: #5e7a7d;
+}
+
+.card__buttons input::-ms-input-placeholder {
+  color: #5e7a7d;
+}
+
+.card__buttons input::placeholder {
+  color: #5e7a7d;
+}
+
+.card__result {
+  padding: 0 25px 32px 25px;
+}
+
+.card__result .tipAmount {
+  margin-bottom: 25px;
+}
+
+.card__result .totalAmount {
+  margin-bottom: 30px;
+}
+
+.card__result .result__title h2 {
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+}
+
+.card__result .result__title p {
+  font-size: 15px;
+  font-weight: 700;
+  color: #7f9c9f;
+}
+
+.card__result .result__price h1 {
+  color: #26c0ab;
+}
+
+.card__result .action_btn {
+  opacity: 0.3;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.data {
+  padding: 45px 25px 25px 25px;
+  border-radius: 15px;
+  background-color: #00494d;
+  min-width: 330px;
+  height: 100%;
+  width: 100%;
+}
+
+.title__selectTip {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.title__numberP {
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.input-form {
+  position: relative;
+  margin-top: 12px;
+}
+
+.input-form .icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(15px, -50%);
+          transform: translate(15px, -50%);
+}
+
+.input-form input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #f5fafa;
+  outline-color: #26c0ab;
+  color: #00494d;
+}
+
+.action_btn:hover {
+  cursor: pointer;
+}
+
+.action_btn:active {
+  background-color: #7efceb;
+  color: #00494d;
+  cursor: pointer;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: #7efceb;
+  color: #00494d;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  .card {
+    border-radius: 15px;
+    margin: 80px;
+    max-height: 480px;
+  }
+  .card__buttons {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .card__result {
+    padding: 32px 25px;
+  }
+  .card__result .data {
+    min-width: 410px;
+    padding: 60px 40px 40px 40px;
+  }
+  .card .result__price h1 {
+    font-size: 45px;
+  }
+}
+
+.selected {
+  background-color: #26c0ab !important;
+  color: #00494d !important;
+}
+/*# sourceMappingURL=style.css.map */

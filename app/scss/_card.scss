@@ -1,0 +1,220 @@
+.logo {
+  padding: 50px 145px 35px 145px;
+  width: 100%;
+
+  text-align: center;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+
+  min-width: 375px;
+  max-width: 920px;
+
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  background-color: $white;
+
+  &__input {
+    padding: 35px 32px;
+
+    h3 {
+      color: $darkGrayishCyan;
+    }
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px 15px;
+
+    .btn {
+      border: none;
+      background-color: $veryDarkCyan;
+      border-radius: 5px;
+      color: $white;
+
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    input {
+      min-width: 120px;
+      min-height: 50px;
+
+      border: none;
+
+      text-align: center;
+      color: $veryDarkCyan;
+      background-color: $whiteGrayishCyan;
+      outline-color: $strongCyan;
+
+      font-weight: 700;
+      font-size: 24px;
+
+      &::placeholder {
+        color: $darkGrayishCyan;
+      }
+    }
+  }
+
+  &__result {
+    padding: 0 25px 32px 25px;
+
+    .tipAmount {
+      margin-bottom: 25px;
+    }
+
+    .totalAmount {
+      margin-bottom: 30px;
+    }
+
+    .result__title {
+      h2 {
+        font-size: 18px;
+        color: $white;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 15px;
+        font-weight: 700;
+        color: $lightGrayishCyan;
+      }
+    }
+
+    .result__price {
+      h1 {
+        color: $strongCyan;
+      }
+    }
+
+    .action_btn {
+      opacity: 0.3;
+      width: 100%;
+      padding: 10px;
+
+      border: none;
+      border-radius: 5px;
+
+      font-size: 24px;
+      font-weight: 700;
+
+      background-color: $strongCyan;
+      color: $veryDarkCyan;
+    }
+  }
+}
+
+.data {
+  padding: 45px 25px 25px 25px;
+  border-radius: 15px;
+
+  background-color: $veryDarkCyan;
+
+  min-width: 330px;
+
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  &__selectTip {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  &__numberP {
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+}
+
+.input-form {
+  position: relative;
+  margin-top: 12px;
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(15px, -50%);
+  }
+
+  input {
+    appearance: none;
+
+    width: 100%;
+    padding: 10px;
+
+    border: none;
+    border-radius: 5px;
+
+    text-align: right;
+    font-size: 24px;
+    font-weight: 700;
+
+    background-color: $whiteGrayishCyan;
+    outline-color: $strongCyan;
+    color: $veryDarkCyan;
+  }
+}
+
+.action_btn:hover {
+  cursor: pointer;
+}
+
+.action_btn:active {
+  background-color: $lightCyan;
+  color: $veryDarkCyan;
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: $lightCyan;
+  color: $veryDarkCyan;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  .card {
+    border-radius: 15px;
+    margin: 80px;
+
+    &__buttons {
+      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-rows: repeat(2, 1fr);
+    }
+
+    &__result {
+      padding: 32px 25px;
+      .data {
+        min-width: 410px;
+        padding: 60px 40px 40px 40px;
+      }
+    }
+
+    .result__price {
+      h1 {
+        font-size: 45px;
+      }
+    }
+    max-height: 480px;
+  }
+}
+
+.selected {
+  background-color: $strongCyan !important;
+  color: $veryDarkCyan !important;
+}
