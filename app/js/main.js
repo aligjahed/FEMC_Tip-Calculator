@@ -121,6 +121,7 @@ function action() {
   tipAmount = 0;
   tipAmount_Person = 0;
   total_person = 0;
+  tempBtn.classList.remove("selected");
   tempBtn = tempBtn.defaultValue;
 
   action_btn.style.opacity = "0.3";
